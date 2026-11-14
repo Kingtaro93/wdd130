@@ -45,6 +45,17 @@ header {
   color: var(--accent2-color);
 }
 
+header img {
+  width: 100px;
+  height: auto;
+}
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+  gap: 16px;
+}
+
 header nav a {
   color: #fff;
   text-decoration: none;
@@ -65,7 +76,7 @@ header nav a:hover {
   height: auto;
 }
 
-.hero h1 {
+h1 {
   position: absolute;
   top: 20px;
   width: 100%;
