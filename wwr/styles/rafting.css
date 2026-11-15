@@ -40,6 +40,12 @@ article {
   padding: 8px;
 }
 
+section h2 {
+  margin-bottom: 4px;
+  padding-bottom: 8px;
+  border-bottom: 3px solid var(--secondary-color);
+}
+
 /* Header */
 header {
   display: grid;
