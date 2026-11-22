@@ -1,13 +1,31 @@
+:root {
+  --primary-color: #0f3d3e;
+  --accent-color: #e07a3e;
+  --text-color: #1a1a1a;
+  --background-light: #f4f1ea;
+  --white: #ffffff;
+  --heading-font: Georgia, "Times New Roman", serif;
+  --body-font: Arial, Helvetica, sans-serif;
+}
+
 * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--body-font);
   max-width: 840px;
   margin: 0 auto;
   padding: 0;
-  color: #1a1a1a;
+  color: var(--text-color);
   line-height: 1.6;
 }
 
@@ -16,13 +34,13 @@ p {
 }
 
 h1 {
-  font-family: Georgia, "Times New Roman", serif;
+  font-family: var(--heading-font);
 }
 
 h2 {
-  font-family: Georgia, "Times New Roman", serif;
+  font-family: var(--heading-font);
   text-align: center;
-  color: #0f3d3e;
+  color: var(--primary-color);
   margin-top: 0;
 }
 
@@ -35,16 +53,16 @@ header {
   grid-template-columns: 120px 1fr;
   align-items: center;
   gap: 1rem;
-  background-color: #0f3d3e;
+  background-color: var(--primary-color);
   padding: 1rem;
-  border-bottom: 4px solid #e07a3e;
+  border-bottom: 4px solid var(--accent-color);
 }
 
 header img {
   width: 100px;
   height: auto;
   justify-self: center;
-  background-color: #ffffff;
+  background-color: var(--white);
   padding: 0.25rem;
   border-radius: 6px;
 }
@@ -61,7 +79,7 @@ header nav ul {
 
 header nav a {
   display: block;
-  color: #ffffff;
+  color: var(--white);
   text-decoration: none;
   font-weight: bold;
   padding: 0.6rem 1rem;
@@ -83,8 +101,8 @@ header nav a {
   top: 20px;
   left: 0;
   right: 0;
-  background-color: #0f3d3e;
-  color: #ffffff;
+  background-color: var(--primary-color);
+  color: var(--white);
   text-align: center;
   padding: 0.75rem;
   margin: 0;
@@ -95,7 +113,7 @@ header nav a {
   bottom: 20px;
   left: 20px;
   right: 20px;
-  background-color: #ffffff;
+  background-color: var(--white);
   padding: 1rem;
 }
 
@@ -125,7 +143,7 @@ header nav a {
 }
 
 .adventures {
-  background-color: #f4f1ea;
+  background-color: var(--background-light);
   padding: 2rem 1rem;
 }
 
@@ -139,7 +157,7 @@ header nav a {
   flex: 1 1 0;
   margin: 0;
   text-align: center;
-  background-color: #ffffff;
+  background-color: var(--white);
   padding: 0.5rem 0.5rem 0.75rem;
   border-radius: 6px;
 }
@@ -154,7 +172,7 @@ header nav a {
 .adventure-gallery figcaption {
   font-weight: bold;
   font-size: 0.9rem;
-  color: #0f3d3e;
+  color: var(--primary-color);
   padding-top: 0.5rem;
   line-height: 1.3;
 }
@@ -164,8 +182,8 @@ footer {
   justify-content: space-between;
   align-items: center;
   gap: 1rem;
-  background-color: #0f3d3e;
-  color: #ffffff;
+  background-color: var(--primary-color);
+  color: var(--white);
   padding: 1rem;
 }
 
